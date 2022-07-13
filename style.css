@@ -1,0 +1,7 @@
+#camara, #fototomada {
+    border-color: aqua;
+    border-width: 3px;
+    width: 350px;
+    height: 350px;
+    border-style: dashed;
+}

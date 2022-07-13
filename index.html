@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>App para reconocimiento de imagenes</h1>
+        <h2>El modelo puede reconocer las siguientes imagenes</h2>
+        <hr>
+        <h2>Sasuke</h2>
+        <hr>
+        <h2>Pelota</h2>
+        <hr>
+        <h2>Naruto</h2>
+        <hr>
+        <h2>Cuchau</h2>
+        <hr>
+        <br>
+        <h1>Vista de la camara</h1>
+        <br>
+        <div id="camara"></div>
+        <br>
+        <h1>Tu objeto aparecera aqui</h1>
+        <br>
+        <div id="fototomada"></div>
+        <hr>
+        <button id="tomarfoto" onclick="tomarfoto()">Tomar foto</button>
+        <p></p>
+        <button id="identificar" onclick="identificar()">Identificar</button>
+        <br>
+        <h1>Objeto</h1>
+        <h2 id="objetoreconocido">Objeto reconocido</h2>
+        <br>
+        <h2>Precicion</h2>
+        <h2 id="porcentajedeprecicion">Porcentaje de precicion</h2>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
